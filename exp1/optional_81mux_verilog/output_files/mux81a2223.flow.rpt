@@ -1,5 +1,5 @@
 Flow report for mux81a2223
-Wed Sep  9 16:30:15 2026
+Wed Sep  9 18:41:45 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep  9 16:30:15 2026           ;
+; Flow Status                        ; Successful - Wed Sep  9 18:41:43 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; mux81a2223                                      ;
 ; Top-level Entity Name              ; mux81a2223                                      ;
@@ -65,7 +65,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/09/2026 15:57:43 ;
+; Start date & time ; 09/09/2026 18:41:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mux81a2223          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ on the Quartus Prime software download page.
 +--------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name          ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +--------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID    ; 10995770589191.178894066208352 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID    ; 10995770589191.178895048418076 ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY ; output_files                   ; --            ; --          ; --         ;
 +--------------------------+--------------------------------+---------------+-------------+------------+
 
@@ -86,13 +86,11 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4807 MB             ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4803 MB             ; 00:00:14                           ;
 ; Fitter               ; 00:00:06     ; 1.0                     ; 6672 MB             ; 00:00:12                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4848 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4942 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4679 MB             ; 00:00:01                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:31                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4848 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 4942 MB             ; 00:00:02                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,8 +103,6 @@ on the Quartus Prime software download page.
 ; Fitter               ; LAPTOP-GD72BTDF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; LAPTOP-GD72BTDF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; LAPTOP-GD72BTDF  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GD72BTDF  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GD72BTDF  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -117,8 +113,6 @@ quartus_map --read_settings_files=on --write_settings_files=off mux81a2223 -c mu
 quartus_fit --read_settings_files=off --write_settings_files=off mux81a2223 -c mux81a2223
 quartus_asm --read_settings_files=off --write_settings_files=off mux81a2223 -c mux81a2223
 quartus_sta mux81a2223 -c mux81a2223
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off mux81a2223 -c mux81a2223 --vector_source=D:/FPGA_Lab/exp1/optional_81mux_verilog/mux81a2223.vwf --testbench_file=D:/FPGA_Lab/exp1/optional_81mux_verilog/simulation/qsim/mux81a2223.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/FPGA_Lab/exp1/optional_81mux_verilog/simulation/qsim/ mux81a2223 -c mux81a2223
 
 
 

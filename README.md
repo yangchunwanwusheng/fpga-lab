@@ -36,7 +36,7 @@ D:\FPGA_Lab\
 - [x] 选器件 EP4CE55F23C8，编译通过（1 LE / 4 pins），RTL Viewer 截图 `shots\01_rtl_mux21a.png`
 - [x] VWF 波形仿真通过（a/b/s 三时钟 0-800ns 覆盖真值表 8 行；y 波形与真值表逐项吻合）`shots\03_wave_mux21a.png`
 - [x] 代码截图 `shots\02_code_mux21a.png`；引脚分配并编译 `shots\04_pins_mux21a.png`（a=W22, b=W21, s=N1, y=AA8）
-- [ ] **USB-Blaster 下载 sof，实验台听音验证**（需实验台开机+JTAG 连线后：Tools→Programmer 或 `quartus_pgm -m jtag -o "p;output_files\mux21a2223.sof"`；s=0 听 1024Hz，s=1 听 256Hz；驱动在 `D:\QP\quartus\drivers`）
+- [x] **USB-Blaster 下载 sof，实验台听音验证**（2026-09-09 实测通过：驱动本机已装好，jtagconfig 检测到 EP4CE55，`quartus_pgm` 下载 mux21a2223.sof 成功，s=0→1024Hz 高音、s=1→256Hz 低音，音调随按键切换）
 - [x] 选做（**2026 版要求 8bit 数据宽度**）：mux81a2223 = d0..d7 各 [7:0]、s[2:0]、y[7:0]，case 实现；编译 40 LE / 75 pins；VWF 仿真通过（d_i=00,11,…,77，s 每 80ns 计数 0-7，y 二进制显示恰为对应通道值）；截图 `optional_81mux_verilog\shots\02_code_mux81a.png`、`03_wave_mux81a.png`（选做只要求波形仿真；如需 RTL 图：Tools→Netlist Viewers→RTL Viewer 手动截取）
 - [x] 已核对 2026 版指导书（33 页）：功能/芯片/引脚/流程与 2025 版一致；新增驱动安装页（p22-24）与波形仿真失败修复方法（p30-32，方法3 同样指向 modelsim_ase\win32aloem，与本项目仿真器切换方案一致）
 - [x] Programmer 界面已实机确认：`shots\05_programmer_mux21a.png`（SOF 已挂载、JTAG 模式、Program/Configure 已勾选，仅缺 USB-Blaster 硬件；工程另存链文件 mux21a2223.cdf）

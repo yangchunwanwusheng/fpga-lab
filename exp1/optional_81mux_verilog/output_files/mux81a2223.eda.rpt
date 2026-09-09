@@ -1,5 +1,5 @@
 EDA Netlist Writer report for mux81a2223
-Wed Sep  9 16:30:15 2026
+Wed Sep  9 18:24:52 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Sep  9 16:30:15 2026 ;
+; EDA Netlist Writer Status ; Successful - Wed Sep  9 18:24:52 2026 ;
 ; Revision Name             ; mux81a2223                            ;
 ; Top-level Entity Name     ; mux81a2223                            ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Wed Sep  9 16:30:15 2026
+    Info: Processing started: Wed Sep  9 18:24:52 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/FPGA_Lab/exp1/optional_81mux_verilog/simulation/qsim/ mux81a2223 -c mux81a2223
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file mux81a2223.vo in folder "D:/FPGA_Lab/exp1/optional_81mux_verilog/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4679 megabytes
-    Info: Processing ended: Wed Sep  9 16:30:15 2026
+    Info: Processing ended: Wed Sep  9 18:24:52 2026
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
