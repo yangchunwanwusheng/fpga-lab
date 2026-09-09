@@ -1,0 +1,15 @@
+# Quartus 编译产物（重新编译自动生成）
+db/
+incremental_db/
+simulation/
+greybox_tmp/
+*.qws
+*.bak
+*.jdi.bak
+
+# 文档构建依赖（npm install 恢复）
+_docs/docgen/node_modules/
+
+# 历史自动化调试截图（保留 .ps1 脚本）
+_tools/*.png
+_tools/screen_*.png

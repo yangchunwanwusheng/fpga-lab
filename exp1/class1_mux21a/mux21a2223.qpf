@@ -1,0 +1,6 @@
+QUARTUS_VERSION = "25.1"
+DATE = "10:30:00 2026/09/09"
+
+# Revisions
+
+PROJECT_REVISION = "mux21a2223"
